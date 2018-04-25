@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class=" desktop landscape">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Menu</title>
+	<!--FAVICON-->
+	<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./assets/img/favicon_min.ico" type="image/x-icon">
+	<!--META-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your keywords">
+	<meta name="author" content="Your name">
+	<!--CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/contact-form.css">
+	<!--JS-->
+	<script src="./assets/js/jquery.js"></script>
+	<script src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<!-- <script src="./assets/js/TMForm.js"></script> -->
+	<script src="./assets/js/jquery.equalheights.min.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery(".toggle_nav_button").on("click", function () {
+				jQuery(this).addClass("active");
+				jQuery("+nav.navbar.navbar-default.navbar-static-top.tm_navbar", this).addClass("active");
+				return false;
+			});
+			jQuery("body").on("click", function (e) {
+				var t = false;
+				var parents = $(e.target).parents().andSelf();
+				for (var key1 in parents) {
+					for (var key2 in parents[key1].classList) {
+						if (parents[key1].classList[key2] == "navbar") {
+							t = true;
+						}
+					}
+				}
+				if (t == true) { } else {
+					jQuery(".toggle_nav_button").removeClass("active");
+					jQuery("nav.navbar.navbar-default.navbar-static-top.tm_navbar").removeClass("active");
+				}
+			});
+		});
+	</script>
+
+	<link rel="stylesheet" href="./assets/css/tm_docs.css" type="text/css" media="screen">
+</head>
+
+<body>
+	</ul>
+	<select class="select-menu nav sf-menu clearfix sf-js-enabled sf-arrows" style="display: inline-block;">
+		<option value="#">Navigate to...</option>
+		<option value="А.template-help.com/wt_53639/index.html">&nbsp;Home</option>
+		<option value="#">&nbsp;About</option>
+		<option value="#">&nbsp;Menu</option>
+		<option value="#">–&nbsp;um nisl</option>
+		<option value="#">–&nbsp;accumsan </option>
+		<option value="#">––&nbsp;um nisl</option>
+		<option value="#">––&nbsp;la vel diam</option>
+		<option value="#">––&nbsp;d in lacus ut</option>
+		<option value="#">–&nbsp;la vel diam</option>
+		<option value="#">–&nbsp;d in lacus ut</option>
+		<option value="#">&nbsp;Gallery</option>
+		<option value="#">&nbsp;Contacts</option>
+	</select>
+	<!--========================================================
+                         	HEADER
+	=========================================================-->
+	<header id="header" class="parallax parallax-bg-1 middle_header bottom-indent" style="background-position: 50% 0px;">
+		<div class="header_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="stuck_container">
+							<div class="left_side">
+								<a href="#" class="brand">
+									<h1 class="brand_name">Italian Restaurant</h1>
+								</a>
+							</div>
+							<div class="right_side">
+								<a href="#" class="toggle_nav_button"></a>
+								<nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+									<ul class="nav sf-menu clearfix sf-js-enabled sf-arrows">
+										<li>
+											<a href="#">Home</a>
+										</li>
+										<li>
+											<a href="#">About</a>
+										</li>
+										<li class="active">
+											<a href="#" class="sf-with-ul">Menu</a>
+											<ul class="submenu sub-menu" style="display: none;">
+												<li>
+													<a href="#">um nisl</a>
+												</li>
+												<li>
+													<a href="#" class="sf-with-ul">accumsan </a>
+													<ul class="submenu sub-menu" style="display: none;">
+														<li>
+															<a href="#">um nisl</a>
+														</li>
+														<li>
+															<a href="#">la vel diam</a>
+														</li>
+														<li>
+															<a href="#">d in lacus ut</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">la vel diam</a>
+												</li>
+												<li>
+													<a href="#">d in lacus ut</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Gallery</a>
+										</li>
+										<li>
+											<a href="#">Contacts</a>
+										</li>
+									</ul>
+									<select class="select-menu nav sf-menu clearfix sf-js-enabled sf-arrows" style="display: inline-block;">
+										<option value="#">Navigate to...</option>
+										<option value="#">&nbsp;Home</option>
+										<option value="https://livedemo00.template-help.com/wt_53639/index-1.html">&nbsp;About</option>
+										<option value="#" selected="selected">&nbsp;Menu</option>
+										<option value="#">–&nbsp;um nisl</option>
+										<option value="#">–&nbsp;accumsan </option>
+										<option value="#">––&nbsp;um nisl</option>
+										<option value="#">––&nbsp;la vel diam</option>
+										<option value="#">––&nbsp;d in lacus ut</option>
+										<option value="#">–&nbsp;la vel diam</option>
+										<option value="#">–&nbsp;d in lacus ut</option>
+										<option value="https://livedemo00.template-help.com/wt_53639/index-3.html">&nbsp;Gallery</option>
+										<option value="https://livedemo00.template-help.com/wt_53639/index-4.html">&nbsp;Contacts</option>
+									</select>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_middle">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<span class="header_address">9863 - 9867 Mill Road, Cambridge, MG09 99HT.</span>
+							<span class="header_phone">+1 800 603 6035</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--========================================================
+                        	CONTENT
+	=========================================================-->
+	<div id="content">
+		<div class="block-2 parallax parallax-bg-5" style="background-position: 50% -45px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h3 class="title title-2">pasta &amp; ravioli</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img1.jpg" alt="photo">
+										<div class="caption">
+											<h4>Fusce interd</h4>
+											<p>Donec eget augue vel odio feug iat porttitor. Duis nec felis eros. Nulla posuere diam quis metus</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img2.jpg" alt="photo">
+										<div class="caption">
+											<h4>Vestibulum</h4>
+											<p>Duis nec felis eros. Nulla posuere diam quis metus luctus aliquet. Vi vamus pellentesque orci non</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img3.jpg" alt="photo">
+										<div class="caption">
+											<h4>ante faucibu</h4>
+											<p>Nulla posuere diam quis metus luctus aliquet. Vivamus pellentesque orci non elit venenatis vestib</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img4.jpg" alt="photo">
+										<div class="caption">
+											<h4>faucibus orci</h4>
+											<p>Ediam quis metus luctus aliquet. Vi vamus pellentesque orci non elit ve nenatis vestibulum.</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-2 parallax parallax-bg-6" style="background-position: 50% -164px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h3 class="title title-2">Pizza</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="block-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img5.jpg" alt="photo">
+										<div class="caption">
+											<h4>Ut pharetra</h4>
+											<p>Betus luctus aliquet. Vivamus pell entesque orci non elit venena tis vestibulum.</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img6.jpg" alt="photo">
+										<div class="caption">
+											<h4>augue nec</h4>
+											<p>Donec tempor ut nisi ac posuere. Aenean vitae egestas turpis. Eti am non convallis lectus</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img7.jpg" alt="photo">
+										<div class="caption">
+											<h4>necNam agna</h4>
+											<p>Duis bibendum elit sit amet nisi viverra lobortis. Donec tempor ut nisi ac posuere. Aenean vitae </p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumb-pad-2">
+									<div class="thumbnail">
+										<img src="./assets/img/page3-img8.jpg" alt="photo">
+										<div class="caption">
+											<h4>amet idunt</h4>
+											<p>Vivamus pellentesque orci non elit venenatis vestibulum. Duis bibe ndum elit sit amet nisi viver</p>
+											<a href="#" class="btn-default btn btn-1">view more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<a href="#" class="btn-default btn btn-1 indent-1">View full menu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--========================================================
+                        	FOOTER
+	=========================================================-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="footer_top">
+						<ul class="list list-2">
+							<li>
+								<a href="#" class="color-1">
+									<p>Facebook </p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-2">
+									<p>Twitter</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-3">
+									<p>Google+</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-4">
+									<p>LinkedIn </p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_bottom">
+						<div class="footer_privacy">Italian Restaurant ©
+							<span id="copyright-year">2018</span> All Rights Reserved |
+							<a href="#"> Privacy policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--JS-->
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<!-- <script src="./assets/js/tm-scripts.js"></script> -->
+	<script src="./assets/js/jquery.cookie.js"></script>
+	<script src="./assets/js/jquery.easing.1.3.js"></script>
+	<script src="./assets/js/device.min.js"></script>
+	<script src="./assets/js/superfish.js"></script>
+	<script src="./assets/js/jquery.mobilemenu.js"></script>
+	<script src="./assets/js/jquery.rd-parallax.js"></script>
+	<script src="./assets/js/jquery.mousewheel.min.js"></script>
+	<script src="./assets/js/jquery.simplr.smoothscroll.min.js"></script>
+	<script src="./assets/js/jquery.ui.totop.js"></script>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"> -->
+	<script>
+		if (jQuery("body").width() > 991) {
+			jQuery('.box-1').equalHeights();
+		}
+		jQuery(window).resize(function () {
+			jQuery('.box-1').height('auto');
+			if (jQuery("body").width() > 991) {
+				jQuery('.box-1').equalHeights();
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" class="desktop landscape">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Gallery</title>
+	<!--FAVICON-->
+	<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./assets/img/favicon_min.ico" type="image/x-icon">
+	<!--META-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your keywords">
+	<meta name="author" content="Your name">
+	<!--CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/contact-form.css">
+	<!--JS-->
+	<script src="./assets/js/jquery.js"></script>
+	<script src="./assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<!-- <script src="./assets/js/TMForm.js"></script> -->
+	<script src="./assets/js/jquery.equalheights.min.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery(".toggle_nav_button").on("click", function () {
+				jQuery(this).addClass("active");
+				jQuery("+nav.navbar.navbar-default.navbar-static-top.tm_navbar", this).addClass("active");
+				return false;
+			});
+			jQuery("body").on("click", function (e) {
+				var t = false;
+				var parents = $(e.target).parents().andSelf();
+				for (var key1 in parents) {
+					for (var key2 in parents[key1].classList) {
+						if (parents[key1].classList[key2] == "navbar") {
+							t = true;
+						}
+					}
+				}
+				if (t == true) { } else {
+					jQuery(".toggle_nav_button").removeClass("active");
+					jQuery("nav.navbar.navbar-default.navbar-static-top.tm_navbar").removeClass("active");
+				}
+			});
+		});
+	</script>
+
+	<link rel="stylesheet" href="./assets/css/tm_docs.css" type="text/css" media="screen">
+</head>
+
+<body>
+	<!--========================================================
+                         	HEADER
+	=========================================================-->
+	<header id="header" class="parallax parallax-bg-1 middle_header" style="background-position: 50% 0px;">
+		<div class="header_top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="stuck_container">
+							<div class="left_side">
+								<a href="№" class="brand">
+									<h1 class="brand_name">Italian Restaurant</h1>
+								</a>
+							</div>
+							<div class="right_side">
+								<a href="#" class="toggle_nav_button"></a>
+								<nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+									<ul class="nav sf-menu clearfix sf-js-enabled sf-arrows">
+										<li>
+											<a href="#">Home</a>
+										</li>
+										<li>
+											<a href="#">About</a>
+										</li>
+										<li>
+											<a href="#" class="sf-with-ul">Menu</a>
+											<ul class="submenu sub-menu" style="display: none;">
+												<li>
+													<a href="#">um nisl</a>
+												</li>
+												<li>
+													<a href="#" class="sf-with-ul">accumsan </a>
+													<ul class="submenu sub-menu" style="display: none;">
+														<li>
+															<a href="#">um nisl</a>
+														</li>
+														<li>
+															<a href="#">la vel diam</a>
+														</li>
+														<li>
+															<a href="#">d in lacus ut</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">la vel diam</a>
+												</li>
+												<li>
+													<a href="#">d in lacus ut</a>
+												</li>
+											</ul>
+										</li>
+										<li class="active">
+											<a href="#">Gallery</a>
+										</li>
+										<li>
+											<a href="#">Contacts</a>
+										</li>
+									</ul>
+									<select class="select-menu nav sf-menu clearfix sf-js-enabled sf-arrows" style="display: inline-block;">
+										<option value="#">Navigate to...</option>
+										<option value="#">&nbsp;Home</option>
+										<option value="#">&nbsp;About</option>
+										<option value="#">&nbsp;Menu</option>
+										<option value="#">–&nbsp;um nisl</option>
+										<option value="#">–&nbsp;accumsan </option>
+										<option value="#">––&nbsp;um nisl</option>
+										<option value="#">––&nbsp;la vel diam</option>
+										<option value="#">––&nbsp;d in lacus ut</option>
+										<option value="#">–&nbsp;la vel diam</option>
+										<option value="#">–&nbsp;d in lacus ut</option>
+										<option value="#" selected="selected">&nbsp;Gallery</option>
+										<option value="#">&nbsp;Contacts</option>
+									</select>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_middle">
+			<div class="wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<span class="header_address">9863 - 9867 Mill Road, Cambridge, MG09 99HT.</span>
+							<span class="header_phone">+1 800 603 6035</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--========================================================
+                        	CONTENT
+	=========================================================-->
+	<div id="content">
+		<div class="block-6">
+			<div role="tabpanel">
+
+				<!-- Nav tabs -->
+				<ul role="tablist" class="list list-6">
+					<li role="presentation" class="active">
+						<a href="#show_all" aria-controls="show_all" role="tab" data-toggle="tab">show all</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#first_categor" aria-controls="first_categor" role="tab" data-toggle="tab">first category</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#second_category" aria-controls="second_category" role="tab" data-toggle="tab">second category</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#third_category" aria-controls="third_category" role="tab" data-toggle="tab">third category</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="show_all">
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-7 toggle_gallary_block" style="background-position: 50% -57px;">
+									<h3 class="title title-2">Birthday party</h3>
+								</div>
+							</li>
+							<li class="container" style="display: none;">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-8 toggle_gallary_block" style="background-position: 50% -128px;">
+									<h3 class="title title-2">National holiday</h3>
+								</div>
+							</li>
+							<li class="container" style="display: none;">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-9 toggle_gallary_block" style="background-position: 50% -181px;">
+									<h3 class="title title-2">pizza day</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-10 toggle_gallary_block" style="background-position: 50% -178px;">
+									<h3 class="title title-2">pasta holiday</h3>
+								</div>
+							</li>
+							<li class="container" style="display: none;">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="first_categor">
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-10 toggle_gallary_block" style="background-position: 50% -57px;">
+									<h3 class="title title-2">pasta holiday</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-8 toggle_gallary_block" style="background-position: 50% -128px;">
+									<h3 class="title title-2">National holiday</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-7 toggle_gallary_block" style="background-position: 50% -180px;">
+									<h3 class="title title-2">Birthday party</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="second_category">
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-9 toggle_gallary_block" style="background-position: 50% -57px;">
+									<h3 class="title title-2">pizza day</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-10 toggle_gallary_block" style="background-position: 50% -128px;">
+									<h3 class="title title-2">pasta holiday</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="third_category">
+						<ul class="list list-7">
+							<li class="wrapper">
+								<div class="parallax parallax-bg-10 toggle_gallary_block">
+									<h3 class="title title-2">pasta holiday</h3>
+								</div>
+							</li>
+							<li class="container">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img1.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img2.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img3.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img4.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img5.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img6.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img7.jpg" alt="photo">
+												</a>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												<a href="#" class="fancy_wrap">
+													<img src="./assets/img/page4-img8.jpg" alt="photo">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--========================================================
+                        	FOOTER
+	=========================================================-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="footer_top">
+						<ul class="list list-2">
+							<li>
+								<a href="#" class="color-1">
+									<p>Facebook </p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-2">
+									<p>Twitter</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-3">
+									<p>Google+</p>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="color-4">
+									<p>LinkedIn </p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_bottom">
+						<div class="footer_privacy">Italian Restaurant ©
+							<span id="copyright-year">2018</span> All Rights Reserved |
+							<a href="#"> Privacy policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--JS-->
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery.cookie.js"></script>
+	<script src="./assets/js/jquery.easing.1.3.js"></script>
+	<script src="./assets/js/device.min.js"></script>
+	<script src="./assets/js/superfish.js"></script>
+	<script src="./assets/js/jquery.mobilemenu.js"></script>
+	<script src="./assets/js/jquery.rd-parallax.js"></script>
+	<script src="./assets/js/jquery.mousewheel.min.js"></script>
+	<script src="./assets/js/jquery.simplr.smoothscroll.min.js"></script>
+	<script src="./assets/js/jquery.ui.totop.js"></script>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0"> -->
+	<script>
+		if (jQuery("body").width() > 991) {
+			jQuery('.box-1').equalHeights();
+		}
+		jQuery(window).resize(function () {
+			jQuery('.box-1').height('auto');
+			if (jQuery("body").width() > 991) {
+				jQuery('.box-1').equalHeights();
+			}
+		});
+	</script>
+</body>
+
+</html>
